@@ -252,6 +252,29 @@
 	
 }
 
+@media (max-width : 360px) {
+	
+	.org_case_block_title{
+		font-size: 26px;
+		line-height: 40px;
+		margin-bottom: 30px;
+	}
+	
+	.program_pdf{
+		width: 240px;
+	}
+	
+	.program_pdf_360{
+		display: none;
+	}
+	
+	.main_title{
+		font-size: 40px;
+		line-height: 60px;
+	}
+	
+}
+
 /* -- HEIGHT -- */
 
 @media (max-height : 800px) {
