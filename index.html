@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1, minimal-ui"/>
+	<meta charset="UTF-8">
+	<title>MCOM Moscow 2018 :: 16 ноября 2018 :: Технополис / Москва</title>
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon"> 
+	<meta name="Author" CONTENT="Wingsman">
+	<meta name="keywords" content="MCOM Moscow 2018, MCOM, m-commerce, e-commerce, conference">
+	<meta name="description" content="Первая большая бизнес-конференция о мобильной коммерции.">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/adaptive.css">
+	
+	<!--
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+	-->
+	
+	<script src="js/j1.js"></script>
+	<script src="js/j2.js"></script>
+	
+	<script>
+
+        $(function(){
+            $(".menu_move_to").click(function(){
+                rel = $(this).attr("rel");
+                element = this
+                move_to = 0;
+                if(rel != ""){
+                    var offset = $("#" + rel).offset();
+                    move_to = offset.top;
+                }
+                $("html, body").stop().animate({
+                        scrollTop: move_to + "px"
+                    }, 1000 , function(){
+                        history.pushState(rel, $(element).text());
+                        window.location.hash = rel;
+                    });
+                return false;
+            });
+
+            $(window).scroll(function(){
+                    var items = Array();
+                    $(".mixxcontent .menu_move_to").each(function(i,e){
+                        items.push(e);
+                    }); 
+                    aaa = items.reverse();
+                    $(aaa).each(function(i1,e1){
+                        r1 = $(e1).attr("rel");
+                        if(r1 != ""){
+                            console.log($(aaa).text());
+                            os1 = $("#" + r1).offset();
+                            s1 = $(window).scrollTop();
+                            if(os1.top >= s1){
+                                $(aaa).removeClass("active");   
+                                $(e1).addClass("active");
+                            }
+                        }
+                    });
+            });
+        });
+
+    </script>
+	
+</head>
+<body>
+	
+	
+	<div class="content_wide">
+		
+		<div class="topmenu">
+			<a href="https://www.instagram.com/mcomconf/" class="topmenu_social" target="_blank"><img src="img/insta.svg"></a>
+			<a href="https://www.facebook.com/mcomconf/" class="topmenu_social" target="_blank"><img src="img/fb.svg"></a>
+			<a href="#contacts" rel="contacts" class="topmenu_button font_med menu_move_to">Билеты</a>
+			<div class="cle"></div>
+		</div>
+	
+		<div class="leftmenu">
+			<a href="https://www.facebook.com/mcomconf/" class="leftmenu_social" target="_blank"><img src="img/fb.svg"></a>
+			<a href="https://www.instagram.com/mcomconf/" class="leftmenu_social" target="_blank"><img src="img/insta.svg"></a>
+			<div class="leftmenu_a">
+				<a href="#contacts" rel="contacts" class="menu_move_to">Контакты</a>
+				<a href="#partners" rel="partners" class="menu_move_to">Партнеры</a>
+				<a href="#technopolis" rel="technopolis" class="menu_move_to">Место</a>
+				<a href="#speakers" rel="speakers" class="menu_move_to">Спикеры</a>
+				<div class="cle"></div>
+			</div>
+			<a href="#contacts" rel="contacts" class="leftmenu_button font_med menu_move_to">Билеты</a>
+		</div>
+		
+		<div class="maindisplay">
+			
+			<div class="toplogo_hh_case">
+				<div class="toplogo_hh_case_text">Организатор:</div>
+				<a href="https://handh.ru/" target="_blank" class="toplogo_hh_case_logo"><img src="img/logo_hh_top.svg"></a>
+				<div class="cle"></div>
+			</div>
+			
+			<div class="mainlogo_case">
+				Первая большая бизнес-конференция о&nbsp;мобильной коммерции. 
+				<img src="img/mcom_biglogo.svg">
+			</div>
+			
+			<div class="maindate_case">
+				<div class="maindate_line">
+					<div class="maindate_line_point"></div>
+				</div>
+				<div class="maindate_bigdate_case">
+					<div class="maindate_bigdate_case_date">
+						<span class="font_med">16 ноября</span><span class="maindate_bigdate_case_reg">Регистрация в 10:30</span>
+					</div>
+					<div class="maindate_bigdate_case_place">Технополис / Москва</div>
+				</div>
+				<div class="cle"></div>
+			</div>
+			
+			<div class="main_pic">
+				<div class="main_pic_forani"><img src="img/main_cart.svg"></div>
+			</div>
+			
+		</div>
+		
+		<div class="main_text" id="speakers">
+			<div class="main_title font_med">10&nbsp;спикеров. 4&nbsp;отрасли.<br>M-commerce.</div>
+			Лидеры индустрий расскажут о&nbsp;личном опыте и&nbsp;новых возможностях самого перспективного направления электронной торговли.
+			<a href="mcom_moscow_2018.pdf" class="program_pdf font_med" target="_blank">Полная программа pdf</a>
+		</div>
+		
+		<div class="program_case">
+			<div class="program_case_text">
+				<div class="program_case_text_time">12:00 – 13:00</div>
+				<div class="program_case_title font_med">Одежда</div>
+				Как вместить миллионы товаров в&nbsp;экран смартфона. Основные отличия m-commerce от традиционного e-commerce. Создание бесшовного опыта.
+			</div>
+			<div class="program_case_pic">
+				<div class="program_case_pic_forani"><img src="img/1.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="program_case">
+			<div class="program_case_text gorevert">
+				<div class="program_case_text_time">13:00 – 14:00</div>
+				<div class="program_case_title font_med">Еда</div>
+				Что скрывается за кнопкой «Заказать» в&nbsp;мобильном приложении: бизнес-процессы, сервисы, платформы, люди.
+			</div>
+			<div class="program_case_pic gorevert">
+				<div class="program_case_pic_forani"><img src="img/2.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="program_case">
+			<div class="program_case_text">
+				<div class="program_case_text_time">15:00 – 16:00</div>
+				<div class="program_case_title font_med">Ритейл</div>
+				Новые технологии: голосовые помощники, NFC, штрих-коды, AR, распознавание товаров и&nbsp;многое другое.
+			</div>
+			<div class="program_case_pic">
+				<div class="program_case_pic_forani"><img src="img/3.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="program_case">
+			<div class="program_case_text gorevert">
+				<div class="program_case_text_time">16:00 – 17:00</div>
+				<div class="program_case_title font_med">Электроника</div>
+				Как увеличить продажи с&nbsp;помощью m-commerce. Аналитика и&nbsp;маркетинг.
+			</div>
+			<div class="program_case_pic gorevert">
+				<div class="program_case_pic_forani"><img src="img/4.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="program_case_black">
+			<div class="program_case_text">
+				<div class="program_case_text_time">18:00 – 18:50</div>
+				<div class="program_case_title font_med font_orange">MCOM Conversations</div>
+				Спикеры ответят на вопросы о&nbsp;запуске и&nbsp;развитии ваших m-commerce проектов в&nbsp;России и&nbsp;зарубежом.
+				<div class="mcom_con_numbers font_med">
+					<div class="mcom_con_num font_orange">5</div> 
+					<div class="mcom_con_ex">экспертов</div>
+					<div class="mcom_con_num font_orange">15</div> 
+					<div class="mcom_con_ex">вопросов</div>
+					<div class="cle"></div>
+				</div>
+				Подарки за&nbsp;лучшие вопросы от&nbsp;партнеров и&nbsp;организаторов.
+			</div>
+			<div class="program_case_pic_black">
+				<div class="mcom_con_pic"><img src="img/mcom_con.svg"></div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<div class="technopolis_case" id="technopolis">
+			<div class="technopolis_photos"></div>
+			<div class="technopolis_text">
+				<div class="technopolis_title font_med">Технополис Москва</div>
+				Крупная площадка для проведения масштабных форумов, высокотехнологичных выставок, конгрессов и&nbsp;топовых ИТ&nbsp;конференций. Лучшее место для MCOM Moscow&nbsp;2018.
+				<br><br>
+				— Большой зал на 500 участников.
+				<br>
+				— Комфортабельные кресла.
+				<br>
+				— Мощный звук и&nbsp;огромный экран.
+				<br>
+				— Зоны отдыха и&nbsp;места для нетворкинга.
+				<br>
+				— Бодрящие кофе-брейки.
+				<div class="technopolis_mapcase">
+					<a href="https://yandex.ru/maps/-/CBu3NHxSpB" target="_blank" class="map_ico"><img src="img/map_ico.svg"></a>
+					<div class="technopolis_mapcase_adress">
+						<div class="technopolis_mapcase_adress_title">Адрес:</div>
+						Москва, Волгоградский&nbsp;проспект,<br>дом&nbsp;42, корпус&nbsp;13
+					</div>
+					<div class="cle"></div>
+				</div>
+			</div>
+			<div class="cle"></div>
+		</div>
+		
+		<!--
+		<div class="tickets_case" id="tickets">
+		
+		</div>
+		
+		<div class="video_case">
+		
+		</div>
+		-->
+		
+		<div class="org_case">
+			<div class="org_case_block">
+				<div class="org_case_block_logo">
+					<img src="img/logo_hh.svg">
+				</div>
+				<div class="org_case_block_text">
+					<div class="org_case_block_subtitle">Организатор</div>
+					<div class="org_case_block_title font_med">Heads and Hands</div>
+					Один из первых разработчиков m-commerce и&nbsp;комплексных цифровых сервисов в&nbsp;России. Запустили более 150 крупных проектов. Среди клиентов: Касперский, Jaguar Land Rover, Lamoda, Leroy Merlin, KIA, ZakaZaka, Samsung, Петрович, Яндекс, ABBYY, Mail.Ru, Тинькофф Банк и&nbsp;другие.
+					<a href="https://handh.ru/" target="_blank" class="font_med">handh.ru</a>
+				</div>
+				<div class="cle"></div>
+			</div>
+			<div class="org_case_line"></div>
+			<div class="org_case_block">
+				<div class="org_case_block_logo">
+					<img src="img/logo_trinet.svg">
+				</div>
+				<div class="org_case_block_text">
+					<div class="org_case_block_subtitle">Соорганизатор</div>
+					<div class="org_case_block_title font_med">Trinet.WebFacultet</div>
+					TRINET.WebFacultet — event-подразделение TRINET.Group. С 2005 года создает ключевые digital-события в&nbsp;Москве и&nbsp;Санкт-Петербурге, организует конференции и&nbsp;форумы по маркетингу и&nbsp;бизнесу.
+					<a href="http://conf.trinet.ru/" target="_blank" class="font_med">conf.trinet.ru</a>
+				</div>
+				<div class="cle"></div>
+			</div>
+		</div>
+		
+		<div class="partners_case" id="partners">
+			<div class="partners_case_title font_med">Генеральные партнеры</div>
+			<div class="partners_case_all">
+				<div class="partners_case_allblock">
+					<a href="#" target="_blank"><img src="img/partners/mcom.png"></a>
+					Статус
+				</div>
+			</div>
+			<div class="partners_line"></div>
+			<div class="partners_case_title font_med">Информационные партнеры</div>
+			<div class="partners_case_all">
+				<div class="partners_case_allblock">
+					<a href="#" target="_blank"><img src="img/partners/mcom.png"></a>
+				</div>
+			</div>
+		</div>
+		
+		<div class="footer" id="contacts">
+			<div class="big_title font_med">Контакты</div>
+			<div class="footer_contacts">
+				<div class="footer_contacts_case">
+					Общие вопросы
+					<a href="mailto:event@mcomconf.ru" target="_blank" class="font_med">event@mcomconf.ru</a>
+				</div>
+				<div class="footer_contacts_case">
+					Информационное сотрудничество
+					<a href="mailto:pr@mcomconf.ru" target="_blank" class="font_med">pr@mcomconf.ru</a>
+				</div>
+				<div class="footer_contacts_case">
+					Вопросы участия и&nbsp;регистрации
+					<a href="mailto:reg@mcomconf.ru" target="_blank" class="font_med">reg@mcomconf.ru</a>
+				</div>
+				<div class="footer_contacts_case">
+					Партнерам и&nbsp;спонсорам
+					<a href="mailto:partner@mcomconf.ru" target="_blank" class="font_med">partner@mcomconf.ru</a>
+				</div>
+				<div class="cle"></div>
+			</div>
+			<div class="footer_line"></div>
+			<div class="footer_hash font_med">#mcomconf</div>
+			<div class="footer_hashtext">
+				MCOM Moscow 2018 в&nbsp;социальных сетях: новости, мнения и&nbsp;интервью экспертов о&nbsp;мобильной коммерции в&nbsp;России, конкурсы от&nbsp;партнеров и&nbsp;многое другое.
+			</div>
+			<div class="footer_social">
+				<a href="https://www.facebook.com/mcomconf/" target="_blank"><img src="img/fb_footer.svg"></a>
+				<a href="https://www.instagram.com/mcomconf/" target="_blank"><img src="img/insta_footer.svg"></a>
+			</div>
+		</div>
+	
+	</div>
+	
+</body>
+</html>
