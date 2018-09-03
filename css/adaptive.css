@@ -111,6 +111,11 @@
 	}
 	
 	.program_case_pic_forani{
+		display: none;
+	}
+	
+	.program_case_pic_forani_ad{
+		display: block;
 		position: relative;
 		top: auto;
 		left: auto;
@@ -119,10 +124,34 @@
 		margin: 0 auto;
 	}
 	
-	.program_case_pic_forani img{
+	.program_case_pic_forani_ad img{
 		width: 80%;
 		height: auto;
 		margin: 0 auto;
+	}
+	
+	.mcom_con_pic{
+		display: block;
+	}
+	
+	.mcom_con_pic_ani{
+		display: none;
+	}
+	
+	.video_case_pic{
+		display: block;
+	}
+	
+	.video_case_pic_ani{
+		display: none;
+	}
+	
+	.main_pic{
+		display: block;
+	}
+	
+	.main_pic_ani{
+		display: none;
 	}
 	
 	.program_case_pic_black{
@@ -178,6 +207,49 @@
 	
 	.map_ico{
 		margin-bottom: 20px;
+	}
+	
+	.tickets_case_tblocks_1{
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 30px;
+	}
+
+	.tickets_case_tblocks_2{
+		float: none;
+		width: 100%;
+	}
+	
+	.tickets_case_price_block{
+		height: auto;
+	}
+	
+	.tickets_case_price_block_nums{
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		padding-top: 0;
+		margin-bottom: 50px;
+	}
+	
+	.tickets_case_price_block_corp{
+		float: none;
+		width: 100%;
+	}
+	
+	.video_case_text{
+		padding-left: 5%;
+	}
+	
+	.video_case_pic{
+		position: relative;
+		top: auto;
+		left: auto;
+		margin-left: 5%;
+		margin-top: 40px;
+		width: 90%;
+		z-index: 10;
 	}
 	
 }
@@ -248,6 +320,32 @@
 		line-height: 36px;
 		width: 90%;
 		margin: 0 auto;
+	}
+	
+	.tickets_case_price_block_nums{
+		border: none;
+	}
+	
+	.tickets_case_price_block_nums_one{
+		display: none;
+	}
+	
+	.tickets_case_price_block_at{
+		display: block;
+	}
+	
+	.tickets_contacts a{
+		font-size: 24px;
+		line-height: 40px;
+	}
+	
+	.tickets_case_howmuch{
+		font-size: 18px;
+		line-height: 26px;
+	}
+	
+	.video_case_price_sub{
+		width: 100%;
 	}
 	
 }
