@@ -1089,6 +1089,15 @@ img{
 	height: 50px;
 }
 
+.runet_tickets{
+	width: 100%;
+	padding: 30px 40px;
+	background-color: #fff;
+	border: 2px solid #fdd301;
+	box-sizing: border-box;
+	margin-bottom: 50px;
+}
+
 /* --- ANIMATION ------------------------------------------ */
 
 /* 1 */
