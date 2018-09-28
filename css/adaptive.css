@@ -252,6 +252,10 @@
 		z-index: 10;
 	}
 	
+	.speakers_block{
+		width: 90%;
+	}
+	
 }
 
 @media (max-width : 890px) {
@@ -391,6 +395,10 @@
 	
 	.runet_tickets{
 		padding: 30px 10px;
+	}
+	
+	.speakers_block{
+		width: 100%;
 	}
 	
 }

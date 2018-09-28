@@ -1099,10 +1099,12 @@ img{
 }
 
 .speakers_block{
-	width: 100%;
+	width: 80%;
+	margin: 0 auto;
 	text-align: center;
 	vertical-align: top;
-	margin-top: 40px;
+	margin-top: -40px;
+	margin-bottom: 100px;
 }
 
 .speakers_case{
