@@ -7,7 +7,7 @@ html{
 body{ 
 	width: 100%;
 	height: 100%;
-	background-color: #fff;
+	background-color: #f1f1f1;
 	width: 100%;
 	height: 100%;
 	margin: 0px;
@@ -228,6 +228,7 @@ img{
 	width: 100%;
 	height: 100%;
 	min-height: 700px;
+	max-height: 1000px;
 	background-color: #fff;
 	z-index: 1;
 	overflow-x: hidden;
@@ -406,7 +407,6 @@ img{
 	width: 340px;
 	height: 60px;
 	margin: 0 auto;
-	margin-top: 60px;
 	text-align: center;
 	border-radius: 2px;
 	color: #000;
@@ -1096,6 +1096,65 @@ img{
 	border: 2px solid #fdd301;
 	box-sizing: border-box;
 	margin-bottom: 50px;
+}
+
+.speakers_block{
+	width: 100%;
+	text-align: center;
+	vertical-align: top;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+
+.speakers_case{
+	display: inline-block;
+	width: 200px;
+	vertical-align: top;
+	font-size: 16px;
+	line-height: 20px;
+	margin-bottom: 40px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.speakers_logo{
+	width: 120px;
+	margin: 0 auto;
+}
+
+.speakers_logo img{
+	width: 100%;
+	height: auto;
+}
+
+.speakers_photo{
+	width: 120px;
+	height: 120px;
+	border-radius: 60px;
+	overflow: hidden;
+	margin: 14px auto;
+}
+
+.speakers_photo img{
+	width: 120px;
+	height: auto;
+}
+
+.speaker_name{
+	color: #000;
+	font-size: 18px;
+	line-height: 24px;
+	margin-bottom: 6px;
+}
+
+.speaker_pos{
+	opacity: 0.5;
+}
+
+.speakers_other{
+	text-align: center;
+	font-size: 18px;
+	line-height: 24px;
 }
 
 /* --- ANIMATION ------------------------------------------ */
