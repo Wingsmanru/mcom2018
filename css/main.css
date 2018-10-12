@@ -527,6 +527,32 @@ img{
 	margin-bottom: 40px;
 }
 
+.program_case_speakers{
+	margin-top: 30px;
+}
+
+.program_case_speaker{
+	margin-bottom: 16px;
+}
+
+.program_case_speaker_photo{
+	float: left;
+	width: 30px;
+	height: 30px;
+	margin-right: 16px;
+	overflow: hidden;
+	border-radius: 15px;
+}
+
+.program_case_speaker_photo img{
+	width: 30px;
+	height: 30px;
+}
+
+.program_case_speaker_text{
+	float: left;
+}
+
 .program_case_pic{
 	position: relative;
 	float: right;
