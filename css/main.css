@@ -532,14 +532,17 @@ img{
 }
 
 .program_case_speaker{
+	position: relative;
+	padding-left: 46px;
 	margin-bottom: 16px;
 }
 
 .program_case_speaker_photo{
-	float: left;
+	position: absolute;
+	top: 0;
+	left: 0;
 	width: 30px;
 	height: 30px;
-	margin-right: 16px;
 	overflow: hidden;
 	border-radius: 15px;
 }
@@ -550,7 +553,7 @@ img{
 }
 
 .program_case_speaker_text{
-	float: left;
+	color: #000;
 }
 
 .program_case_pic{
@@ -673,6 +676,11 @@ img{
 	background-color: #f1f1f1;
 }
 
+.org_case.goblack{
+	color: #fff;
+	background-color: #292929;
+}
+
 .org_case_block{
 	width: 100%;
 }
@@ -705,6 +713,10 @@ img{
 	transition: opacity 0.3s;
 }
 
+.org_case_block_text a.goblack{
+	color: #fff !important;
+}
+
 .org_case_block_text a:hover{
 	opacity: 0.5;
 }
@@ -726,6 +738,10 @@ img{
 	margin: 100px 0px;
 	margin-left: 30%;
 	opacity: 0.1;
+}
+
+.org_case_line.goblack{
+	background-color: #fff;
 }
 
 .partners_case{
@@ -1212,7 +1228,7 @@ img{
 
 @keyframes ani_1_1_ani {
   	0% { top: 0; }
-	20% { top: -30px; }
+	20% { top: -26px; }
 	40% { top: 0; }
 	100% { top: 0; }
 }
@@ -1239,7 +1255,7 @@ img{
 @keyframes ani_1_2_ani {
   	0% { top: 0; }
 	20% { top: 0; }
-	40% { top: -30px; }
+	40% { top: -26px; }
 	60% { top: 0; }
 	100% { top: 0; }
 }
