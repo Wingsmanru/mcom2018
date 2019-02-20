@@ -1979,3 +1979,39 @@ img{
 	50% { height: 120px;}
 	100% { height: 100px;}
 }
+
+/* --- PARTNERS --- */
+
+.partners_case_pred{
+	position: relative;
+	width: 100%;
+	padding: 40px;
+	padding-left: 240px;
+	background-color: #fff;
+	box-sizing: border-box;
+	text-align: left;
+	font-size: 18px;
+	line-height: 30px;
+	margin-bottom: 10px;
+}
+
+.partners_case_pred a{
+	color: #000;
+	transition: color 0.3s;
+}
+
+.partners_case_pred a:hover{
+	color: #fbcf48;
+}
+
+.partners_case_pred_logo{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 160px;
+}
+
+.partners_case_pred_logo img{
+	width: 100%;
+	height: auto;
+}

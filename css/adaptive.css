@@ -360,6 +360,21 @@
 		width: 100%;
 	}
 	
+	.partners_case_pred{
+		padding: 40px;
+		padding-left: 40px;
+		padding-top: 100px;
+		line-height: 26px;
+	}
+
+	.partners_case_pred_logo{
+		position: absolute;
+		top: 20px;
+		left: auto;
+		right: 20px;
+		width: 100px;
+	}
+	
 }
 
 @media (max-width : 360px) {
@@ -392,7 +407,7 @@
 	.leftmenu_a{
 		bottom: 55%;
 	}
-	
+
 }
 
 @media (max-height : 680px) {
