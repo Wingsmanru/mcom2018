@@ -235,6 +235,7 @@ img{
 	max-height: 900px;
 	background-color: #fff;
 	z-index: 1;
+	overflow-x: hidden;
 }
 
 .toplogo_hh_case{
