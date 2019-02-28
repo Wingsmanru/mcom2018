@@ -720,6 +720,19 @@ img{
 	opacity: 0.5;
 }
 
+.go_sheme{
+	color: #000;
+	-moz-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.go_sheme:hover{
+	color: #fdd301;
+}
+
 .tickets_case{
 	width: 100%;
 	padding: 140px 5%;
@@ -918,15 +931,15 @@ img{
 	font-size: 36px;
 	line-height: 50px;
 	color: #000;
-	-moz-transition: opacity 0.3s;
-	-ms-transition: opacity 0.3s;
-	-webkit-transition: opacity 0.3s;
-	-o-transition: opacity 0.3s;
-	transition: opacity 0.3s;
+	-moz-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	transition: color 0.3s;
 }
 
 .tickets_contacts a:hover{
-	opacity: 0.5;
+	color: #fdd301;
 }
 
 .tickets_case_price_block{
