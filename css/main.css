@@ -55,6 +55,10 @@ img{
 	color: #fdd301;
 }
 
+.font_white{
+	color: #fff;
+}
+
 .cle{
 	clear: both;
 }
@@ -231,7 +235,6 @@ img{
 	max-height: 900px;
 	background-color: #fff;
 	z-index: 1;
-	overflow-x: hidden;
 }
 
 .toplogo_hh_case{
@@ -435,7 +438,6 @@ img{
 	height: 60px;
 	margin: 0 auto;
 	text-align: center;
-	border-radius: 2px;
 	color: #000;
 	font-size: 16px;
 	line-height: 60px;
@@ -2047,4 +2049,26 @@ img{
 
 .top_workshop:hover{
 	background-color: #000;
+}
+
+/* --- VIDEO --- */
+
+.video_block{
+	width: 100%;
+	padding: 60px 5%;
+	text-align: center;
+	background-color: #292929;
+	box-sizing: border-box;
+}
+
+.video_block_yt{
+	width: 100%;
+	background-color: #000;
+	margin-bottom: 40px;
+}
+
+.video_block_ytt{
+	width: 800px;
+	height: 450px;
+	margin: 0 auto;
 }
